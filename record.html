@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기록의 방</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    /* 메인 타이틀 */
+    .main-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* 타이틀 아래 선 */
+    .title-line {
+      width: 1450px;
+      height: 1px;
+      background-color: #b2b2b2;
+      margin-bottom: 40px;
+    }
+
+    /* 사진 갤러리 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .photo-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .photo-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .photo-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6; /* ✅ 줄 간격 추가 */
+    }
+
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* 상단 헤더 */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px; /* 로고 크기 조정 */
+      width: auto;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .menu a:hover {
+      color: #888;
+    }
+     /* 헤더 아래 타이틀 영역 */
+    .page-title {
+      margin-top: 20px; /* 헤더와의 간격 */
+      margin-left: 40px; /* 왼쪽 여백 */
+      font-size: 50px;
+      font-weight: 600;
+      color: #222;
+    }
+    
+    /* 설명문 섹션 */
+    .description {
+      width: 100%;
+      margin: 0 auto; /* 왼쪽 정렬 */
+      font-size: 16px;
+      line-height: 1.1;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+ <!-- 헤더 -->
+  <header>
+    <div class="logo">
+      <!-- 여기에 로고 이미지 파일 넣으시면 됩니다 -->
+      <a href="index.html">
+        <img src="archieve.png" alt="나의 감각 기록소 로고">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="meeting.html">우연의 만남</a>
+      <a href="sound.html">소망의 방</a>
+      <a href="record.html">기록의 방</a>
+      <a href="book.html">독서의 방</a>
+      <a href="thinking.html">사색의 방</a>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- 메인 타이틀 -->
+    <div class="main-title">기록의 방</div>
+    <div class="title-line"></div>
+<div class="description">
+    <h4>기록하는 일상</h4>
+    <p>ㅡ</p>
+    <p>무언갈 보았을 때, 이 감정을 추후에도 간직하고픈 마음에 들어 즉흥적으로 사진을 찍는 순간이 있습니다.</p>
+    <p>마치 이 기억을 잃고 싶지 않다는 마음이 곧바로 들게 된다고 해야 할까요.</p>
+    <p>&nbsp;</p>
+    <p><b>'기록의 방'</b>은 그러한 마음에서 비롯된 순간의 모음집입니다.</p>
+    <p>이곳에서의 사진과 설명은 그때의 감정을 되살려 주며,</p>
+    <p>여전히 사진을 보기만 해도 이전의 상황이 자연스레 떠오르는 것이 모처럼 신기합니다.</p>
+    <p>
+    이렇게 차곡차곡 모아 둔 저만의 추억은 오직 저를 위한 선물이 되어 줍니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <!-- 사진 갤러리 -->
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="blossom.jpg" alt="사진1">
+        <p>이번 년도 4월 초, 벚꽃 시즌이 한창일 때 동네 공원에 가서 찍은 사진이에요. 확실히 사진을 보니 봄내음이 물씬 풍기는 것 같아요. 얼른 봄이 와서 산뜻해지면 좋겠네요.</p>
+      </div>
+      <div class="photo-card">
+        <img src="brunch1.png" alt="사진2">
+        <p>버스 타고 혼자 놀러가서 가고 싶었던 브런치 카페에서 찍은 사진이에요. 날씨도 좋았고, 맛도 최고였어요. 나중에 꼭 다시 방문하고 싶은 장소예요.</p>
+      </div>
+      <div class="photo-card">
+        <img src="sea1.png" alt="사진3">
+        <p>가족이랑 함께 속초 여행을 갔을 때 바다에서 찍은 사진이에요. 저는 겨울 바다를 보러 가는 걸 정말 좋아해요. 특유의 서늘하고 차가운 분위기가 좋거든요.</p>
+      </div>
+      <div class="photo-card">
+        <img src="cloud.jpg" alt="사진4">
+        <p>차를 타고 이동하던 중, 우연찮게 동네에서 마주한 예쁜 구름이에요. 몽실몽실 빵긋하게 차 있는 구름이 꽤나 귀여워 보이지 않나요? 마치 구름빵 같아요.</p>
+      </div>
+      <div class="photo-card">
+        <img src="cock.jpg" alt="사진5">
+        <p>얼마 전 동네 공원에 가서 마주한 온실 속 선인장이에요. 저는 공원 산책을 좋아해요. 기분 전환에 효과적이거든요. 선인장을 보니 어쩐지 마음도 편안해지는 것 같아요. </p>
+      </div>
+      <div class="photo-card">
+        <img src="rice.png" alt="사진6">
+        <p>제가 정말 좋아하는 덮밥집의 명란 덮밥이에요. 실은 제 최애 메뉴 중 하나가 덮밥이거든요. 동네 덮밥 맛집 다 꿰고 있는 제가 언제나 마음속에 두고 지내는 곳이랍니다.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

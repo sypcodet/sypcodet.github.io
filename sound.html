@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소망의 방 | 나의 감각 기록소</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    /* 전체 컨테이너 */
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* 왼쪽 설명 영역 */
+    .left-panel {
+      width: 30%;
+      background-color: #f5f5f5;
+      padding: 60px 40px;
+      box-sizing: border-box;
+    }
+
+    .left-panel h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 1px;
+      background-color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .left-panel p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    /* 오른쪽 앨범 영역 */
+    .right-panel {
+      width: 70%;
+      padding: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 40px;
+      box-sizing: border-box;
+    }
+
+    .album {
+      text-align: center;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .album img:hover {
+      transform: scale(1.05);
+    }
+
+    .album-title {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    /* 오디오 플레이어 */
+    audio {
+      width: 100%;
+      margin-top: 8px;
+      outline: none;
+    }
+     /* 상단 헤더 */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px; /* 로고 크기 조정 */
+      width: auto;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .menu a:hover {
+      color: #888;
+    }
+    .album-comment {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+  </style>
+</head>
+<body>
+     <!-- 헤더 -->
+  <header>
+    <div class="logo">
+      <!-- 여기에 로고 이미지 파일 넣으시면 됩니다 -->
+      <a href="index.html">
+        <img src="archieve.png" alt="나의 감각 기록소 로고">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="meeting.html">우연의 만남</a>
+      <a href="sound.html">소망의 방</a>
+      <a href="record.html">기록의 방</a>
+      <a href="book.html">독서의 방</a>
+      <a href="thinking.html">사색의 방</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- 왼쪽 설명 영역 -->
+    <div class="left-panel">
+      <h1>소망의 방</h1>
+      <div class="divider"></div>
+      <p>
+        이 방은 제가 일상 속에서 마주한 설렘을 담은 공간입니다.<br>
+        아직 손에 닿지 않은 것들을 담아 두는 장소이자, 언제나 기록해 두고<br>
+        확인할 수 있는 다이어리 같은 곳입니다.<br><br>
+        제가 사랑하는 위시리스트들을 통해 여러분도 저의 소망이 담긴 세계를<br> 함께 느껴 보시길 바랍니다.
+      </p>
+    </div>
+
+    <!-- 오른쪽 앨범 영역 -->
+    <div class="right-panel">
+      <div class="album">
+        <img src="pouch.png" alt="앨범 커버 1">
+        <div class="album-title">브로콜리상하 : 핫케익 파우치</div>
+       <p class="album-comment">굉장히 아기자기한 파우치예요.</p>
+       <p class="album-comment">귀여운 건 언제나 좋은걸요. 🎶</p>
+      </div>
+
+      <div class="album">
+        <img src="cap-removebg-preview.png" alt="앨범 커버 2">
+        <div class="album-title">도미넌트 : Star Kids Cap</div>
+       <p class="album-comment">브라운과 블루의 조합이 마음에 들어요.</p>
+       <p class="album-comment">독특한 느낌에 끌려요. 😎</p>
+      </div>
+
+      <div class="album">
+        <img src="jam-removebg-preview.png" alt="앨범 커버 3">
+        <div class="album-title">쎄콩데 : 유기농 토마토 잼</div>
+          <p class="album-comment">토마토 잼이라는 색다른 조합이 신기해요.</p>
+       <p class="album-comment">나중에 꼭 먹어 보고파요. 🍅</p>
+      </div>
+
+      <div class="album">
+        <img src="clover.png" alt="앨범 커버 3">
+        <div class="album-title">퀼트공방자야 : 클로버 카드지갑</div>
+          <p class="album-comment">가운데 콕 박혀 있는 클로버가 귀여워요.</p>
+       <p class="album-comment">마치 행운이 찾아올 것만 같아요. 🍀</p>
+      </div>
+      <div class="album">
+        <img src="cheese.png" alt="앨범 커버 3">
+        <div class="album-title">발캉스 : 치즈 슬리퍼</div>
+          <p class="album-comment">노랑노랑한 색감이 굉장히 산뜻해요.</p>
+       <p class="album-comment">꼭 톰과 제리의 치즈 같아요. 🧀</p>
+    </div>
+    <div class="album">
+        <img src="onigiri.png" alt="앨범 커버 3">
+        <div class="album-title">할미슈퍼 : 오니기리 보냉 파우치</div>
+          <p class="album-comment">귀여운 오니기리가 제 마음을 이끌어요.</p>
+       <p class="album-comment">도시락 싸고 다니면 기분 최고일 듯. 🍙</p>
+    </div>
+    <div class="album">
+        <img src="mosh.png" alt="앨범 커버 3">
+        <div class="album-title">모슈 : 330ml 텀블러</div>
+          <p class="album-comment">동글동글한 이미지가 깜찍해요.</p>
+       <p class="album-comment">따뜻하게 코코아 담아 마시기. 🍫</p>
+    </div>
+    <div class="album">
+        <img src="pink.png" alt="앨범 커버 3">
+        <div class="album-title">솔스티스 : whirlpool</div>
+          <p class="album-comment">핑크와 그린의 조합 최고.</p>
+       <p class="album-comment">모양이 독특해서 더욱 색달라요. 🦩</p>
+    </div>
+  </div>
+</body>
+</html>

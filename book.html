@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독서의 방</title>
+    <style>
+         /* 상단 헤더 */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px; /* 로고 크기 조정 */
+      width: auto;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .menu a:hover {
+      color: #888;
+    }
+    .reading-room {
+  text-align: center;
+  padding: 100px 80px;
+  background-color: #fff;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #555;
+  line-height: 1.7;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-cover {
+  width: 200px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #d9d9d9;
+}
+
+.book-info {
+  width: 200px;
+  background-color: #efefef;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+
+.book-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.book-comment {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+    </style>
+</head>
+<body>
+      <!-- 헤더 -->
+  <header>
+    <div class="logo">
+      <!-- 여기에 로고 이미지 파일 넣으시면 됩니다 -->
+      <a href="index.html">
+        <img src="archieve.png" alt="나의 감각 기록소 로고">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="meeting.html">우연의 만남</a>
+      <a href="sound.html">소망의 방</a>
+      <a href="record.html">기록의 방</a>
+      <a href="book.html">독서의 방</a>
+      <a href="thinking.html">사색의 방</a>
+    </nav>
+  </header>
+
+  <section class="reading-room">
+    <img src="icons8-book-50.png">
+  <h1 class="page-title">독서의 방</h1>
+  <div class="description">
+    <p>
+      책 속에서 발견한 문장과 감정들을 기록하는 공간입니다.<br>
+      제가 읽은 이야기들이 내면의 세계를 어떻게 변화시키는지를 차분히 바라봅니다.
+    </p>
+  </div>
+
+  <div class="book-grid">
+    <div class="book-card">
+      <img src="snowman.jpg" alt="책1" class="book-cover">
+      <div class="book-info">
+        <p class="book-title">눈으로 만든 사람 : 최은미</p>
+        <p class="book-comment">“양치를 하려고 몸을 일으키는 것조차 어려울 때가 있어요.”</p>
+        <p>-</p>
+        <p class="book-comment">'눈으로 만든 사람'이라는 책은 제목에서 알 수 있듯, 겨울에 읽기 좋은 책이에요.</p>
+        <p class="book-comment">누군가를 그리워하는 마음, 나의 마음 상태, 유일하게 내 말을 묵묵히 들어주는 존재. 그리고 함께 나누는 삶.</p>
+        <p class="book-comment">다양한 단편 소설들로 채워져 있으며, 서늘한 분위기에 어울려요. 편안한 분위기에서 홀로 정독해 보길 추천합니다.</p>
+      </div>
+      
+    </div>
+
+    <div class="book-card">
+      <img src="hulhul.jpg" alt="책2" class="book-cover">
+      <div class="book-info">
+        <p class="book-title">훌훌 : 문경민</p>
+         
+        <p class="book-comment">"내 어린 시절이 생각났다. 마음이 힘들어도 시간은 칙칙폭폭 앞으로 나아갔다."</p>
+        <p>-</p>
+         <p class="book-comment">'훌훌'은 어린 시절의 나를 대입해 생각해 볼 수 있는 책이에요.</p>
+        <p class="book-comment">누군가를 가까운 사이로 새로 맞이하게 됐을 때, 우리는 과연 어떻게 상대를 대할 수 있을까요.</p>
+        <p class="book-comment">복잡한 감정 속에서도 스스로를 다독이는 힘을 전해 주며, 읽고 나면 마음 한켠이 조용히 정돈되는 경험을 할 수 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="bento.jpg" alt="책3" class="book-cover">
+      <div class="book-info">
+        <p class="book-title">나는 매일 직장상사의 도시락을 싼다 : 유즈키 아사코</p>
+        <p class="book-comment">"“저 포기만은 빨라요. 아니라고 생각하면 바로 떠나서 다음 방법을 생각한다! 일일이 좌절하지 않는다!"</p>
+           <p>-</p>
+         <p class="book-comment">이 책은 도시락을 싸는 일상 생활을 산뜻한 분위기로 풀어내 담은 책이에요.</p>
+        <p class="book-comment">날마다 변하는 도시락 그림을 보며, 소소하게 감상해 보는 즐거움을 느낄 수 있어요.</p>
+        <p class="book-comment">색다른 소설을 읽어 보고 싶다면 추천합니다.</p>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="discription.jpg" alt="책4" class="book-cover">
+      <div class="book-info">
+        <p class="book-title">선량한 차별주의자 : 김지혜</p>
+        <p class="book-comment">"차별은 악의에서만 비롯되는 것이 아니다."</p>
+           <p>-</p>
+         <p class="book-comment">겉으로는 선한 의도를 가졌지만 무심히 행해지는 차별의 실체를 깊이 있게 다루는 책이에요.</p>
+        <p class="book-comment">‘차별은 나와 무관하다’는 생각이 얼마나 쉽게 또 다른 불평등을 낳는지 날카롭게 짚어내며,</p>
+        <p class="book-comment">‘진정한 선의는 타인의 입장에서 생각하는 것’이라는 점을 배우게 된다는 것이 제게는 뜻깊게 느껴졌습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

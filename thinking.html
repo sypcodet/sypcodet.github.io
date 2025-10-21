@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사색의 방</title>
+     <style>
+         /* 상단 헤더 */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 60px; /* 로고 크기 조정 */
+      width: auto;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .menu a:hover {
+      color: #888;
+    }
+    .thought-room {
+  width: 80%;
+  max-width: 1000px;
+  margin: 100px auto; /* 헤더 아래 여백 */
+  color: #333;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* 각 아이템 사이 간격 */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.item img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+    </style>
+</head>
+<body>
+       <!-- 헤더 -->
+  <header>
+    <div class="logo">
+      <!-- 여기에 로고 이미지 파일 넣으시면 됩니다 -->
+      <a href="index.html">
+        <img src="archieve.png" alt="나의 감각 기록소 로고">
+      </a>
+    </div>
+    <nav class="menu">
+      <a href="meeting.html">우연의 만남</a>
+      <a href="sound.html">소망의 방</a>
+      <a href="record.html">기록의 방</a>
+      <a href="book.html">독서의 방</a>
+      <a href="thinking.html">사색의 방</a>
+    </nav>
+  </header>
+  <main class="thought-room">
+  <section class="intro">
+    <h2>사색의 방</h2>
+    <p class="description">
+      나의 생각과 감정을 기록하는 공간입니다. 일상 속에서 느꼈던 사색의 순간들을 담았습니다.
+    </p>
+  </section>
+
+  <section class="content">
+    <div class="item">
+      <img src="bookcity.jpg" alt="장소 이미지 1">
+      <div class="text"><b>파주출판도시</b><br>이곳은 파주에 있는 파주출판도시예요.<br>
+    제가 예전부터 자주 다녔던 장소이며, 이곳에는 유명한 <b>'지혜의 숲'</b>이라는 도서관이 있어요. 굉장히 규모가 크며, 웅장한 분위기를 자아내는 곳이에요.<br>
+저는 이곳 주변의 다른 소규모 책방, 그리고 중고서점 방문하기, 주변 산책하기를 좋아해요. 출판단지 내에 맛있는 양식집과, 책을 읽으며 베이커리를 즐길 수 있는 북카페들도 많아요.
+따듯한 차 한 잔 옆에 두며 함께 책을 읽으면 그게 행복이죠!<br>
+아마 겨울이나 가을 같은 서늘한 계절에 방문하면 더욱 매력 있는 장소가 될 거예요.<br>나중에 꼭 한번 방문해 보시길 추천합니다.<br>
+</div>
+       
+    </div>
+
+    <div class="item">
+      <img src="glass.jpg" alt="장소 이미지 2">
+      <div class="text"><b>유리섬박물관</b><br>이곳은 대부도에 있는 유리섬박물관이에요.<br>
+      이곳에서는 이름에서부터 알 수 있듯, 유리과 관련된 공예품 전시를 주로 진행합니다. 또한 특색 있는 행사도 많이 진행하는데요.<br>
+    유리 공접을 하는 모습을 바로 앞에서 감상할 수 있는 공연도 진행하며, 주변을 산책하며 자연 경관을 감상할 수도 있습니다.<br>
+  개인적으로 제가 굉장히 좋아하는 장소인데요, 고즈넉한 풍경을 감상할 수 있음과 동시에 색다른 경험을 해 볼 수 있기 때문에 추천합니다.<br>
+사람이 많이 없는 시기에 방문하게 된다면 더욱 아늑하고 평온한 분위기를 즐길 수 있을 거예요.</div>
+    </div>
+
+    <div class="item">
+      <img src="artplaform.jpg" alt="장소 이미지 3">
+      <div class="text"><b>인천아트플랫폼</b><br>이곳은 동인천에 위치한 인천아트플랫폼이에요.<br>
+        이곳은 인천 차이나타운 내에 있는 복합문화공간이에요. 차이나타운은 익숙하지만, 이곳은 잘 모르시는 분들이 많으신데요.<br>
+        다양한 전시와 문화공간, 도서관 등을 접해 볼 수 있는 장소랍니다.<br>
+        이곳 또한 제가 좋아하는 장소 중 한 곳인데요. 옛스러운 주변 동인천의 분위기 사이 다양한 특색 있는 전시를 접하고
+        예술적 감각을 키워 볼 수 있는 곳이라는 점이 특성인 것 같습니다. 주변에 개항장거리, 박물관, 근대문학관 등 많은 볼거리 및 즐길 거리가 있으며
+        근처의 공원이나 <b>'제물포구락부'</b>라는 곳에서 정기적으로 진행하는 공연을 관람해 보는 것도 추천드립니다. 마음이 굉장히 편해지는 장소라고 말하고 싶어요.
+      </div>
+
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
